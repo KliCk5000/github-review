@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Candidate Github Review</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+  <meta name="description" content="Website to lookup someones Github projects.">
+</head>
+
+<body>
+  <header role="banner">
+    <h1>Candidate Review</h1>
+  </header>
+  <!-- Form we use to search -->
+  <section role="region">
+    <form class="js-form">
+        <label for="user-handle">GitHub User handle:</label>
+        <input type="text" name="user-handle" class="js-user-handle" required>
+
+        <input type="submit" value="Submit!">
+    </form>
+  </section>
+  <!-- Results Area -->
+  <section role="region" class="results js-results hidden">
+      <h2>Search results</h2>
+      <ul class="results-list js-results-list">
+      </ul>
+  </section>
+
+  <footer role="contentinfo">
+    <p>Made by Nick Dean</p>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
