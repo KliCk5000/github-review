@@ -11,31 +11,34 @@
 </head>
 
 <body>
-  <header role="banner">
-    <h1>Candidate Review</h1>
-  </header>
-  <!-- Form we use to search -->
-  <section role="region">
-    <form class="js-form">
+  <div class="container">
+    <header role="banner">
+      <h1>Candidate Review</h1>
+    </header>
+    <!-- Form we use to search -->
+    <section role="region">
+      <form class="js-form">
         <label for="user-handle">GitHub User handle:</label>
         <input type="text" name="user-handle" class="js-user-handle" required>
 
         <input type="submit" value="Submit!">
-    </form>
-  </section>
-  <!-- Results Area -->
-  <section role="region" class="results js-results hidden">
+      </form>
+      <p class="error-message js-error-message"></p>
+    </section>
+    <!-- Results Area -->
+    <section role="region" class="results js-results hidden">
       <h2>Search results</h2>
       <ul class="results-list js-results-list">
       </ul>
-  </section>
+    </section>
 
-  <footer role="contentinfo">
-    <p>Made by Nick Dean</p>
-  </footer>
+    <footer role="contentinfo">
+      <p>Made by Nick Dean</p>
+    </footer>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </div>
 </body>
 
 </html>
